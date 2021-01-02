@@ -247,3 +247,64 @@ p, li , a {
  
 }
 
+.seccion2{
+    height: 800px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitulo{
+    color: #ffffff;
+    font-family: 'Trispace', sans-serif ;
+    text-align: center;
+}
+
+.caja{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.img{
+    width: 50%;
+    border: 2px #ffffff solid;
+    height: 200px;
+}
+
+.contenido-info{
+    width: 50%;
+    border: 2px #ffffff solid;
+    height: 200px;
+}
+
+.imagen-co{
+    height: 200px;
+    width: 100%;
+}
+
+.seccion-3{
+    height: 550px;
+    width: 100%;
+    background:#DBDBDB;
+    padding: 5px 0px;
+    overflow: hidden;
+}
+
+.servicio-contenido{
+    border: 2px #373737 solid;
+    padding: 20px;
+    width: 20%;
+    height: 70%;
+}
+
+.servicio-fila{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
