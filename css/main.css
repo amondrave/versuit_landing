@@ -1,6 +1,20 @@
 *{
     font-size: 18px;
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*FUENTE LOGOTIPO*/
+@font-face {
+    font-family: 'Robotech';
+    src: url('../fonts/ROBOTECH\ GP.ttf');
+}
+
+/*PERSONALIZACION CAPA IN PAGE*/
+
+body{
+    background: #373737;
 }
 
 #ancla-menu{
@@ -8,8 +22,228 @@
     font-size: 2em;
     text-decoration: none;
     color: black;
+    text-decoration-line: none;
+    position: relative;
+
 }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 5%;
+}
+
+.logotipo{
+    cursor: pointer;
+    font-family: Robotech;
+    font-size: 2.1rem;
+    color: #373737;
+    animation: in-header 2.6s ease-in alternate;
+}
+
+.menu{
+    list-style: none;
+    animation: in-header 2.6s ease-in alternate;
+}
+
+.menu li{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 10px;
+    font-family: Quicksand;
+}
+
+.item_menu{
+    color: #707070;
+}
+
+.item-button{
+    background: #BA1E1E;
+    color: white;
+    list-style: none;
+    display: inline;
+    border-radius: 17px;
+    padding: 6px 12px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    
+    animation: in-btn 2.6s  linear alternate 1;
+}
+
+@keyframes in-btn{
+    0%{
+        opacity: 0;
+        background: #BA1E1E;
+    }
+    50%{
+        background: white;
+        color: #373737;
+    }
+    100%{
+        background: #BA1E1E;
+        color: white;
+        opacity: 1;
+    }
+}
+
+/*CABECERA*/
 
 p, li , a {
     font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+ }
+
+ .header{
+    width: 100%;
+    background: #DBDBDB;
+    
 }
+
+@keyframes in-header{
+    from{
+        transform: translateY(-300px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+#logotipo{
+    width: 115px;
+    margin-top: -5px;
+}
+
+
+
+
+/* BANNER INICIO*/
+.seccion{
+    height: 550px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background:#DBDBDB;
+    padding: 5px 0px;
+    overflow: hidden;
+}
+
+@keyframes in-seccion{
+    from{
+        transform: translateY(500px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+.triang{
+    height: 480px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#tri{
+    height: 150%;
+    width: 150%;
+    animation: rotacion 3.5s linear alternate-reverse infinite ;
+}
+
+/*ANIMACIÓN SVG TRIANGULOS*/
+
+@keyframes rotacion{
+    0%{
+        transform: rotate(-1.2deg);
+        
+    }
+    50%{
+        transform: rotate(0deg);
+        transform: scale(1.01);
+    }
+    100%{
+        transform: rotate(1.2deg);
+        
+     
+    }
+}
+
+/*TEXTO ESLOGAN*/
+
+.eslogan{
+    position: absolute;
+    display: flex;
+}
+.text1{
+    color: #BA1E1E;
+    animation: in-text1 2s ease-out alternate;
+}
+
+@keyframes in-text1{
+    from{
+        transform: translateX(1800px) ;
+    }
+    to{
+        transform: translateX(0) ;
+    }
+}
+
+.text1:hover{
+    color: white;
+    transition: .5s linear;
+    margin-left: 60px;
+    overflow: hidden;
+}
+
+.text2:hover{
+    color: white;
+    transition: .5s;
+    margin-right: 60px;
+    overflow: hidden;
+}
+
+.text{
+    color: white;
+    margin: 0px 20px ;
+    animation: in-text2 2s ease-in alternate;
+}
+
+@keyframes in-text{
+    from{
+        transform: translateX(3300px) ;
+    }
+    to{
+        transform: translateX(0) ;
+    }
+}
+
+.text2{
+    color: #343D47;
+    animation: in-text2 2s alternate;
+}
+
+@keyframes in-text2{
+    from{
+        transform: translateX(3300px) ;
+    }
+    to{
+        transform: translateX(0) ;
+    }
+}
+
+.text1,.text,.text2{
+    font-size: 5.5rem;
+    font-family: Trispace;
+    cursor: default;
+}
+
+.seccion_inf{
+    position: relative;
+    height: 120px;
+    width: 100%;
+ 
+}
+

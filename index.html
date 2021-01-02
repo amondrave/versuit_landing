@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Versuit</title>
     <meta name="description" content="Empresa de soluciones tecnológicas al alcance de tu mano ">
 
     <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@500&display=swap" rel="stylesheet">
 
@@ -20,22 +21,37 @@
 </head>
 
 <body>
-    <header class="cabecera">
-        <nav class="cabecera__nav">
-            <a href="cabecera__nav-a" id="ancla-menu">Versuit</a>
-            <ul class="cabecera__nav-ul">
-                <li class="cabecera__nav-li">Conocenos</li>
-                <li class="cabecera__nav-li">Servicios</li>
-                <li class="cabecera__nav-li">Equipo</li>
-                <li class="cabecera__nav-li">Contactanos</li>
+    <header class="header">
+        <a class="logotipo">
+            <object>
+                <embed id="logotipo" src="logotipo.svg">
+            </object></a>
+        <nav class="navigation" id="main-navigation">
+            <ul class="menu">
+                <li id="logotipo"><a class="item_menu" href="#">Conócenos</a></li>
+                <li><a class="item_menu" href="#">Servicios</a></li>
+                <li><a class="item_menu" href="#">Equipo</a></li>
+                <li><a class="item_menu" href="#">Contáctanos</a></li>
             </ul>
-            <button class="cabecera__nav-button">Botón</button>
         </nav>
+        <li class="item-button"><a href="#"></a>Contactar</li>
+
     </header>
     <main class="contenedor">
         <div class="seccion">
-            <p>Aca ira el banner de inicio</p>
+            <div class="triang">
+                <object>
+                    <embed id="tri" src="figuras_triangulos_fus.svg">
+                </object>
+                <div class="eslogan">
+                    <div class="text1">Tecnología</div>
+                    <div class="text">+</div>
+                    <div class="text2">Innovación</div>
+                </div>
+            </div>
+            <div class="seccion_inf"></div>
         </div>
+        <div class="seccion2"></div>
     </main>
 
     <!--Scripts JS-->
