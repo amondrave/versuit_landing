@@ -308,3 +308,114 @@ p, li , a {
     flex-direction: row;
     justify-content: center ;
 }
+
+.contenedor-equi{
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    padding: 20px;
+   
+}
+
+.equipo-card{
+    border: 2px #ffffff solid;
+    color: #ffffff;
+    text-align: center;
+}
+
+.equipo-card h3{
+    font-family: 'Trispace', sans-serif ;
+    font-size: 1.5em;
+}
+
+.alineado{
+    height: 400px;
+    width: 400px;
+    padding: 20px;
+    vertical-align: text-bottom;
+}
+
+#contacto{
+
+    height: 700px;
+    /*flex-direction: row;*/    
+    margin-top: 30px;
+}
+
+.contenedor-contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
+}
+
+.caja-contacto{
+    height: 590px;
+    width: 500px;
+    border: 2px #ffffff solid;
+}
+
+#bg{
+    background-color: #BA1E1E;
+    color: #DBDBDB;
+}
+
+#bg-form{
+    background-color: #fbfbfb; 
+}
+
+.formulario{
+    width: 100%;
+    height: auto;
+    margin:  auto;
+    border-radius: 10px;  
+	padding-top: 30px;
+	padding-bottom: 20px;   
+    padding-left: 30px; 
+}
+
+.formulario input{
+	background-color: #fbfbfb; 
+	width: 408px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #BA1E1E; 
+	margin-top: 10px;  
+	padding-left: 10px;
+    margin-bottom: 20px; 
+}
+
+.formulario textarea{
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #BA1E1E; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+  
+  
+.formulario label{
+    display: block; 
+    float: center; 	
+  }
+
+#boton{
+    height: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-transform: uppercase;
+    background-color: #BA1E1E;
+    border-color: #ffffff;
+    border-style: solid;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+}
