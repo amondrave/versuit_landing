@@ -321,7 +321,7 @@ p, li , a {
 
 .servicio-contenido{
     padding: 20px;
-    width: 30%;
+    width: 100%;
     height: 95%;
 }
 
@@ -332,8 +332,30 @@ p, li , a {
     height: 450px;
 }
 
-/*CARDS SERVICIOS*/
 
+/*SECCION EQUIPO DE TRABAJO*/
+
+.seccion3{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    width: 100%;
+}
+
+.contenedor_equi{
+    height: 500px;
+    width: 100%;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.card_servicio{
+    
+    width: 100%;
+}
 
 h5
 {
@@ -360,8 +382,9 @@ p
 
 .property-card
 {
-  height:18em;
-  width:100%;
+  height:25em;
+  width:30%;
+  display: inline-block;
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
@@ -375,14 +398,15 @@ p
   transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   
   overflow:hidden;
-  -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
-  box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  -webkit-box-shadow:  15px 15px 27px #1f1f1f, -15px -15px 27px #1d1d1d;
+  box-shadow:  15px 15px 27px#1f1f1f, -15px -15px 27px #1d1d1d;
 }
 /* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
 
 /* Top Half of card, image. */
 
-.property-image
+
+.property-image-monrra
 {
   height:100%;
   width:100%;
@@ -392,8 +416,22 @@ p
   -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  background-image:url('https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg');
+  background-image: url("../img/mondra.jpg");
   background-size:cover;
+  background-repeat:no-repeat;
+}
+.property-image-joimar
+{
+  height:100%;
+  width:100%;
+  padding:1em 2em;
+  position:Absolute;
+  top:0px;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-size:cover;
+  background-image: url("../img/joimar.jpg");
   background-repeat:no-repeat;
 }
 
@@ -451,185 +489,6 @@ p
   cursor:pointer;
 }
 
-/*SECCION EQUIPO DE TRABAJO*/
-
-.seccion3{
-    display: flex;
-    flex-direction: column;
-    height: 1000px;
-    width: 100%;
-}
-
-.contenedor_equi{
-    height: 500px;
-    width: 100%;    
-    flex-direction: row;
-}
-
-transition-ease-in-out: all .25s ease-in-out 0s;
-transition-cubic-bezier : all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-animation-offset: 80px;
-
-*, :after, :before {
-    box-sizing: border-box;
-}
-
-strong {
-	font-weight: 900;
-}
-
-.canvas-wrapper {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100%;
-	
-	.canvas + .canvas {
-		margin-left: 40px;
-	}
-}
-.canvas {
-	position: relative;
-	display: block;
-	width: 400px;
-	height: 400px;
-	padding: 20px;
-	color: inherit;
-	text-decoration: none;
-}
-.canvas_border {
-	position: absolute;
-	top: 40px;
-	left: -40px;
-	height: 100%;
-	width: 100%;
-	z-index: 0;
-
-	svg {
-		height: 100%;
-		width: 100%;
-	}
-}
-.rect-gradient {
-	stroke-dasharray: 2000;
-	stroke-dashoffset: 2000;
-	animation: erase-line 1s ease-in-out forwards;
-}
-.canvas_img-wrapper {
-	position: absolute;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	transform: rotate(-10deg) skew(-10deg);
-	overflow: hidden;
-	background: white;
-}
-.canvas_img {
-	transform: scale3d(.9,.9,.9);
-	opacity: .3;
-	max-width: 200px;
-	max-height: 200px;
-}
-.canvas_copy {
-	position: absolute;
-	bottom: 0;
-	left: 85%;
-	text-transform: uppercase;
-	color: #dac527;
-	z-index: 100;
-}
-.canvas_copy--left {
-	left: -25%;
-}
-.canvas_copy_title {
-	font-size: 62px;
-	display: block;
-	transform: translateX(-#{$animation-offset});
-		transition: $transition-cubic-bezier 0s;
-		color: black;
-
-		&:nth-child(1) {
-			transition-delay: 0.1s;
-			}
-		&:nth-child(2) {
-			transition-delay: 0.2s;
-			}
-}
-.canvas_copy_subtitle {
-	display: block;
-	transform: rotate(270deg) translateY(-100%) translateX(calc(-100% - #{$animation-offset}));
-	transform-origin: top left;
-	position: absolute;
-	left: 0;
-	top: 8px; //This needs to change with font size. It's an offset for the line-height of the "hellow world"
-	font-size: 24px;
-	font-weight: 900;
-	transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.35s;
-}
-.canvas_copy_details {
-	display: block;
-	transition: $transition-cubic-bezier 0.14s;
-	transform: translateX(-#{$animation-offset});
-		}
-.canvas_border, .canvas_img-wrapper, .canvas_img  {
-	transition: $transition-ease-in-out;	
-}
-.canvas_border, .canvas_img-wrapper {
-	transform: rotate(-10deg) skew(-10deg);	
-}
-.canvas_copy_title, .canvas_copy_subtitle, .canvas_copy_details {
-	opacity: 0;
-}
-.canvas:hover {
-	.canvas_copy_title, .canvas_copy_subtitle, .canvas_copy_details, .canvas_img {
-		opacity: 1;
-	}
-	.canvas_border, .canvas_img-wrapper {
-		transform: rotate(-14deg) skew(-14deg) scale(0.96);
-	}
-	.canvas_img {
-		transform: scale3d(1,1,1);
-	}
-	.canvas_copy_title, .canvas_copy_details {
-		transform: translateX(0);
-	}
-	.canvas_copy_subtitle {
-		transform: rotate(270deg) translateY(-100%) translateX(-100%);
-	}
-	.rect-gradient {
-		animation: draw-line 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-	}
-}
-
-@keyframes draw-line {
-	from {
-		stroke-dashoffset: 2000;		
-	}
-	to {
-		stroke-dashoffset: 0;
-	}
-}
-@keyframes erase-line {
-	from {
-		stroke-dashoffset: 0;
-	}
-	to {
-		stroke-dashoffset: 2000;		
-	}
-}
-@keyframes fade-in {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
-
 /*SECCION CONTACTANOS*/
 
 #sub_contacto{
@@ -638,13 +497,13 @@ strong {
 
 #contacto{
 
-    height: 700px;
+    height: 800px;
     /*flex-direction: row;*/    
     margin-top: 30px;
 }
 
 .seccion_contacto{
-    height: 600px;
+    height: 800px;
     background: white;
 }
 
@@ -653,6 +512,7 @@ strong {
     flex-direction: row;
     justify-content: center;
     padding: 30px;
+    height: 100%;
 }
 
 .caja-contacto{
@@ -726,13 +586,113 @@ strong {
     cursor: pointer;
 }
 
+/*SECCION FOOTER*/
+
+.container {
+    height: 300px;
+    width: 600px;
+    top: 60px;
+    left: calc(50% - 300px);
+    display: flex;
+  }
+  
+  .card {
+    display: flex;
+    height: 150px;
+    width: 120px;
+    background-color: #17141d;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+  /*   margin-left: -50px; */
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+  }
+  
+  .card:not(:first-child) {
+      margin-left: -50px;
+  }
+  
+  .card:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+  }
+  
+  .card:hover ~ .card {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+  }
+  
+  .title {
+    color: white;
+    font-weight: 300;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+  }
+  
+  .bar {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    height: 2px;
+    width: 30px;
+  }
+  
+  .emptybar {
+    background-color: #2e3033;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .filledbar {
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    width: 0px;
+    height: 100%;
+    background: rgb(0,154,217);
+    background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+    transition: 0.6s ease-out;
+  }
+  
+  .card:hover .filledbar {
+    width: 120px;
+    transition: 0.4s ease-out;
+  }
+  
+  .circle {
+    position: absolute;
+    top:    50px;
+    left: calc(50% - 60px);
+  }
+  
+  .stroke {
+    stroke: white;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 360;
+    transition: 0.6s ease-out;
+  }
+  
+  svg {
+    fill: #17141d;
+    stroke-width: 2px;
+  }
+  
+  .card:hover .stroke {
+    stroke-dashoffset: 100;
+    transition: 0.6s ease-out;
+  }
+
 .footer {
     display: flex;
     flex-flow: row wrap;
     padding: 50px;
     color: #fff;
-    background-color: #BA1E1E;
+    background-color: #343434;
     }
+
     
     .footer > * {
     flex:  1 100%;
