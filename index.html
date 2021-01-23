@@ -272,44 +272,79 @@
         </div>
 
         <div class="seccion3" id="equipo">
-            <h2 class="subtitulo">Equipo de trabajo</h2>
+            <div class="contenedor_text">
+                <div class="subtitles">
+                    <h5 class="subtitulo_mini">Conoce nuestro</h5>
+                    <h2 id="sub_equipo_trabajo" class="subtitulo">Equipo de trabajo</h2>
+                </div>
+                <div class="cont_triang">
+                    <div class="row_triang">
+
+                    </div>
+                    <div class="row_triang">
+
+                    </div>
+                    <div class="row_triang">
+
+                    </div>
+
+                </div>
+            </div>
             <div class="contenedor_equi">
-                <div class="property-card">
-                    <a href="#">
-                        <div id="card_monrra" class="property-image-monrra">
-                            <div class="property-image-title">
+                <div class="slider">
+                    <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
+                    <input type="radio" name="slider" title="slide2" class="slider__nav"/>
+                    <div class="slider__inner">
+                      <div class="slider__contents">
+                        <div class="property-card">
+                            <a >
+                                <div id="card_monrra" class="property-image-monrra">
+                                    <div class="property-image-title">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="property-description">
+                                <h5> Angel Mondragón </h5>
+                                <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum
+                                    doth be hard.</p>
                             </div>
+                            <a >
+                                <div class="property-social-icons">
+                                    <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                    <div class="property-description">
-                        <h5> Card Title </h5>
-                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum
-                            doth be hard.</p>
-                    </div>
-                    <a href="#">
-                        <div class="property-social-icons">
-                            <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
-                        </div>
-                    </a>
-                </div>
-                <div class="property-card">
-                    <a href="#">
-                        <div id="card_joimar" class="property-image-joimar">
-                            <div class="property-image-title">
+                      </div>
+                      <div class="slider__contents">
+                        <div class="property-card">
+                            <a >
+                                <div id="card_joimar" class="property-image-joimar">
+                                    <div class="property-image-title">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="property-description">
+                                <h5> Joimar Mendoza </h5>
+                                <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum
+                                    doth be hard.</p>
                             </div>
+                            <a >
+                                <div class="property-social-icons">
+                                    <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                    <div class="property-description">
-                        <h5> Card Title </h5>
-                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum
-                            doth be hard.</p>
+                      </div>
+                      <div class="slider__contents"><i class="slider__image fa fa-television"></i>
+                        
+                      </div>
+                      <div class="slider__contents"><i class="slider__image fa fa-diamond"></i>
+                       
+                      </div>
                     </div>
-                    <a href="#">
-                        <div class="property-social-icons">
-                            <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
-                        </div>
-                    </a>
-                </div>
+                  </div>
+                
+               
 
             </div>
         </div>
@@ -348,13 +383,12 @@
         </div>
         <ul class="r-footer">
             <li>
-                <h2>
-                    Redes sociales</h2>
+                <h2 class="txt_redes" >Redes sociales</h2>
                 <ul class="box_redes">
                     <li><a href="#">
-                            <div class="container">
-                                <div class="card">
-                                    <h3 class="title">Card 1</h3>
+                            <div class="container_redes">
+                                <div id="card_facebook" class="card">
+                                    <h3 class="title">Facebook</h3>
                                     <div class="bar">
                                         <div class="emptybar"></div>
                                         <div class="filledbar"></div>
@@ -365,8 +399,8 @@
                                         </svg>
                                     </div>
                                 </div>
-                                <div class="card">
-                                    <h3 class="title">Card 2</h3>
+                                <div id="card_instagram" class="card">
+                                    <h3 class="title">Instagram</h3>
                                     <div class="bar">
                                         <div class="emptybar"></div>
                                         <div class="filledbar"></div>
@@ -377,8 +411,8 @@
                                         </svg>
                                     </div>
                                 </div>
-                                <div class="card">
-                                    <h3 class="title">Card 3</h3>
+                                <div id="card_whatsapp" class="card">
+                                    <h3 class="title">Whatsapp</h3>
                                     <div class="bar">
                                         <div class="emptybar"></div>
                                         <div class="filledbar"></div>
@@ -389,18 +423,7 @@
                                         </svg>
                                     </div>
                                 </div>
-                                <div class="card">
-                                    <h3 class="title">Card 4</h3>
-                                    <div class="bar">
-                                        <div class="emptybar"></div>
-                                        <div class="filledbar"></div>
-                                    </div>
-                                    <div class="circle">
-                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-                                            <circle class="stroke" cx="60" cy="60" r="50" />
-                                        </svg>
-                                    </div>
-                                </div>
+                                
                             </div>
 
                         </a></li>

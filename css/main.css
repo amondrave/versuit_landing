@@ -267,7 +267,8 @@ p, li , a {
     color: #696969;
     font-family: 'Quicksand', sans-serif ;
     text-align: left;
-    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-bottom: 15px;
     font-size: 1.3rem;
 }
 
@@ -302,7 +303,6 @@ p, li , a {
     height: 1250px;
     width: 100%;
     background:#DBDBDB;
-    padding: 5px 0px;
     overflow: hidden;
 }
 
@@ -337,20 +337,182 @@ p, li , a {
 
 .seccion3{
     display: flex;
-    flex-direction: column;
-    height: 700px;
+    flex-direction: row;
+    height: 650px;
     width: 100%;
 }
 
+.contenedor_text{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.cont_triang{
+    display: flex;
+    flex-direction: column;
+    margin-left: 55px;
+}
+
+.row_triang{
+    margin: 25px 0px;
+}
+
+#tri{
+    height: 58px;
+    width: 45px;
+}
+
+#sub_equipo_trabajo{
+    font-size: 3.5rem;
+    margin-left: 15px;
+}
+
 .contenedor_equi{
-    height: 500px;
-    width: 100%;    
+    height: 100%;
+    width: 50%;    
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-top: 20px;
+    background: white;
 }
+
+/*slider cards*/
+
+.slider {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .slider__nav {
+    width: 22px;
+    height: 22px;
+    margin: 1.4rem 12px;
+    border-radius: 50%;
+    z-index: 10;
+    outline: 6px solid #ccc;
+    outline-offset: -6px;
+    box-shadow: 0 0 0 0 rgb(129, 129, 129), 0 0 0 0 rgba(133, 133, 133, 0);
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+  }
+  .slider__nav:checked {
+    -webkit-animation: check 0.4s linear forwards;
+            animation: check 0.4s linear forwards;
+  }
+  .slider__nav:checked:nth-of-type(1) ~ .slider__inner {
+    left: 0%;
+  }
+  .slider__nav:checked:nth-of-type(2) ~ .slider__inner {
+    left: -100%;
+  }
+  .slider__nav:checked:nth-of-type(3) ~ .slider__inner {
+    left: -200%;
+  }
+  .slider__nav:checked:nth-of-type(4) ~ .slider__inner {
+    left: -300%;
+  }
+  .slider__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400%;
+    height: 100%;
+    -webkit-transition: left 0.4s;
+    transition: left 0.4s;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  .slider__contents {
+    height: 100%;
+    padding: 2rem;
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .slider__image {
+    font-size: 2.7rem;
+        color: #2196F3;
+  }
+  .slider__caption {
+    font-weight: 500;
+    margin: 2rem 0 1rem;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+  }
+  .slider__txt {
+    color: #999;
+    margin-bottom: 3rem;
+    max-width: 300px;
+  }
+  
+  @-webkit-keyframes check {
+    50% {
+      outline-color: #333;
+      box-shadow: 0 0 0 12px #333, 0 0 0 36px #BA1E1E;
+    }
+    100% {
+      outline-color: #333;
+      box-shadow: 0 0 0 0 #333, 0 0 0 0 #BA1E1E;
+    }
+  }
+  
+  @keyframes check {
+    50% {
+      outline-color: #333;
+      box-shadow: 0 0 0 12px #333, 0 0 0 36px #BA1E1E;
+    }
+    100% {
+      outline-color: #333;
+      box-shadow: 0 0 0 0 #333, 0 0 0 0 #BA1E1E;
+    }
+  }
 
 .card_servicio{
     
@@ -383,7 +545,7 @@ p
 .property-card
 {
   height:25em;
-  width:30%;
+  width:65%;
   display: inline-block;
   display:-webkit-box;
   display:-ms-flexbox;
@@ -398,8 +560,8 @@ p
   transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   
   overflow:hidden;
-  -webkit-box-shadow:  15px 15px 27px #1f1f1f, -15px -15px 27px #1d1d1d;
-  box-shadow:  15px 15px 27px#1f1f1f, -15px -15px 27px #1d1d1d;
+  -webkit-box-shadow:  10px 10px 22px #c7c7c7, -10px -10px 22px #bdbdbd;
+  box-shadow:  10px 10px 22px#c7c7c7, -10px -10px 22px #bdbdbd;
 }
 /* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
 
@@ -588,20 +750,39 @@ p
 
 /*SECCION FOOTER*/
 
-.container {
+.container_redes {
     height: 300px;
-    width: 600px;
+    width: 250px;
     top: 60px;
+    margin: 0px 45px;
     left: calc(50% - 300px);
     display: flex;
   }
+
+  .txt_redes{
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+  }
+
+  #card_facebook{
+    background: #3b5998;
+  }
+
+  #card_instagram{
+      background: linear-gradient(to bottom, #3f729b, #c32aa3);
+}
+
+#card_whatsapp{
+      background: #25d366;
+}
+
   
   .card {
     display: flex;
     height: 150px;
     width: 120px;
-    background-color: #17141d;
-    border-radius: 10px;
+    background-color: none;
+    border-radius: 5px;
     box-shadow: -1rem 0 3rem #000;
   /*   margin-left: -50px; */
     transition: 0.4s ease-out;
@@ -666,6 +847,7 @@ p
     position: absolute;
     top:    50px;
     left: calc(50% - 60px);
+    opacity: .3;
   }
   
   .stroke {
@@ -683,6 +865,11 @@ p
   .card:hover .stroke {
     stroke-dashoffset: 100;
     transition: 0.6s ease-out;
+  }
+
+  .isotipo{
+      height: 100px;
+      width: 100px;
   }
 
 .footer {
@@ -743,7 +930,7 @@ p
     .b-footer {
     text-align: center;
     color: #fbfbfb;
-    padding-top: 50px;
+    padding-top: 10px;
     }
     
     .l-footer p {

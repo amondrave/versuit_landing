@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="41" viewBox="0 0 38 41">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: none;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Polígono_6" data-name="Polígono 6" class="cls-1">
+    <path class="cls-2" d="M19,0,38,41H0Z"/>
+    <path class="cls-3" d="M 19 7.135017395019531 L 4.69671630859375 38 L 33.30328369140625 38 L 19 7.135017395019531 M 19 0 L 38 41 L 0 41 L 19 0 Z"/>
+  </g>
+</svg>
