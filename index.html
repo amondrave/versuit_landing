@@ -292,81 +292,115 @@
             </div>
             <div class="contenedor_equi">
                 <div class="slider">
-                    <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
-                    <input type="radio" name="slider" title="slide2" class="slider__nav"/>
+                    <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav" />
+                    <input type="radio" name="slider" title="slide2" class="slider__nav" />
                     <div class="slider__inner">
-                      <div class="slider__contents">
-                        <div class="property-card">
-                            <a >
-                                <div id="card_monrra" class="property-image-monrra">
-                                    <div class="property-image-title">
+                        <div class="slider__contents">
+                            <div class="property-card">
+                                <a>
+                                    <div id="card_monrra" class="property-image-monrra">
+                                        <div class="property-image-title">
+                                        </div>
                                     </div>
+                                </a>
+                                <div class="property-description">
+                                    <h5> Angel Mondragón </h5>
+                                    <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem
+                                        Ipum
+                                        doth be hard.</p>
                                 </div>
-                            </a>
-                            <div class="property-description">
-                                <h5> Angel Mondragón </h5>
-                                <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum
-                                    doth be hard.</p>
-                            </div>
-                            <a >
-                                <div class="property-social-icons">
-                                    <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
-                                </div>
-                            </a>
-                        </div>
-                      </div>
-                      <div class="slider__contents">
-                        <div class="property-card">
-                            <a >
-                                <div id="card_joimar" class="property-image-joimar">
-                                    <div class="property-image-title">
+                                <a>
+                                    <div class="property-social-icons">
+                                        <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
                                     </div>
-                                </div>
-                            </a>
-                            <div class="property-description">
-                                <h5> Joimar Mendoza </h5>
-                                <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum
-                                    doth be hard.</p>
+                                </a>
                             </div>
-                            <a >
-                                <div class="property-social-icons">
-                                    <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
-                                </div>
-                            </a>
                         </div>
-                      </div>
-                      <div class="slider__contents"><i class="slider__image fa fa-television"></i>
-                        
-                      </div>
-                      <div class="slider__contents"><i class="slider__image fa fa-diamond"></i>
-                       
-                      </div>
+                        <div class="slider__contents">
+                            <div class="property-card">
+                                <a>
+                                    <div id="card_joimar" class="property-image-joimar">
+                                        <div class="property-image-title">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="property-description">
+                                    <h5> Joimar Mendoza </h5>
+                                    <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem
+                                        Ipum
+                                        doth be hard.</p>
+                                </div>
+                                <a>
+                                    <div class="property-social-icons">
+                                        <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider__contents"><i class="slider__image fa fa-television"></i>
+
+                        </div>
+                        <div class="slider__contents"><i class="slider__image fa fa-diamond"></i>
+
+                        </div>
                     </div>
-                  </div>
-                
-               
+                </div>
+
+
 
             </div>
         </div>
 
 
-        <div class="seccion_contacto" id="contacto">
-            <h2 class="subtitulo" id="sub_contacto">Contáctanos</h2>
-            <div class="contenedor-contacto">
-                <div class="caja-contacto" id="bg">
-                </div>
-                <div class="caja-contacto" id="bg-form">
-                    <form action="" class="formulario">
-                        <div><label>Tu Nombre:</label><input type='text' value=''></div>
-                        <div><label>Tu Email:</label><input type='text' value=''></div>
-                        <div><label>Asunto:</label><input type='text' value=''></div>
-                        <div><label>Mensaje:</label><textarea rows='6'></textarea></div>
-                        <div><input type='submit' value='Envia Mensaje' id="boton"></div>
+        <div class="contenido-form" id="sub_contacto">
+            <h1 class="brand-form">Contactanos</h1>
+            <div class="contacto-grupo">
+                <div class="formulario">
+                    <h3>Contactanos</h3>
+                    <form action="" method="POST">
+                        <p>
+                            <label>Nombre completo</label>
+                            <input type="text">
+                        </p>
+                        <p>
+                            <label>Correo electronico</label>
+                            <input type="email">
+                        </p>
+                        <p>
+                            <label>Telefono</label>
+                            <input type="tel" pattern="">
+                        </p>
+                        <p>
+                            <label>Asunto</label>
+                            <input type="text">
+                        </p>
+                        <p class="bloque-fr">
+                            <label>Mensaje</label>
+                            <textarea name="mensaje" rows="3"></textarea>
+                        </p>
+                        <p class="bloque-fr">
+                            <button type="submit">
+                                Enviar
+                            </button>
+                        </p>
                     </form>
                 </div>
-
+                <div class="formulario-info">
+                    <h4>Más información</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i></li>
+                        <li><i class="fas fa-map-marker"></i></li>
+                        <li><i class="fas fa-envelope"></i></li>
+                    </ul>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, rerum enim ipsum alias omnis,
+                        ullam
+                        aperiam quas tenetur qui sint animi pariatur. Repudiandae velit minus deserunt dicta sed
+                        voluptas
+                        voluptate!</p>
+                </div>
             </div>
         </div>
+
 
     </main>
 
@@ -383,7 +417,7 @@
         </div>
         <ul class="r-footer">
             <li>
-                <h2 class="txt_redes" >Redes sociales</h2>
+                <h2 class="txt_redes">Redes sociales</h2>
                 <ul class="box_redes">
                     <li><a href="#">
                             <div class="container_redes">
@@ -423,7 +457,7 @@
                                         </svg>
                                     </div>
                                 </div>
-                                
+
                             </div>
 
                         </a></li>
@@ -452,6 +486,7 @@
 
     <!--Scripts JS-->
     <script src="js/app.js"></script>
+    <script src="https://kit.fontawesome.com/a63229d38e.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
