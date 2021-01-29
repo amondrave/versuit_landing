@@ -434,6 +434,12 @@ a {
     }
 }
 
+@media (max-width: 600px) {
+    .seccion-3 {
+        height: 1450px;
+    }
+}
+
 @media (min-width: 800px) and (max-width: 1199px) {
     .seccion-3 {
         height: 1050px;
