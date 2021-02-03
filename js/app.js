@@ -1,3 +1,6 @@
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 /* TOGGLE NAVBAR*/
 function open_nav() {
     $j('html').addClass('panel-nav');
