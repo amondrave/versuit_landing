@@ -11,6 +11,10 @@
     src: url("../fonts/ROBOTECH\ GP.ttf");
 }
 
+html {
+    height: 100%;
+}
+
 /*PERSONALIZACION CAPA IN PAGE*/
 
 body {
@@ -418,13 +422,191 @@ a {
     }
 }
 
-.seccion2 {
-    height: 800px;
-    width: 100%;
-    margin-top: 20px;
+/* Seccion conocenos */
+.conocenos-container > * {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.conocenos-container {
+    display: grid ;
+    gap: 10px;
+    grid-template-areas: 
+    "informacion"
+    "carusel";
+    height: 400px ;
+
+}
+
+.conocenos-info{
+    grid-area: informacion;
+    background-color: #bababa;
+    
+}
+
+.conocenos-carusel{
+    grid-area: carusel;
+    background-color: rgb(247, 237, 237);
     display: flex;
     flex-direction: column;
 }
+
+.titulo-conocenos{
+    background-color: black;
+    font-size: 2em;
+    color: white;
+    
+}
+
+.contenido-conocenos{
+    background-color: darkred;
+    color: white;
+    text-align: left !important;
+    margin-top: 20px;
+   
+}
+
+@media  (min-width: 600px){
+    .conocenos-container{
+        grid-template: 
+          "informacion carusel" 
+        ;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 900px){
+    .conocenos-container{
+        grid-template: 
+          "informacion carusel" 
+        ;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 20px;
+    }
+    
+    .conocenos-info{
+        margin-left: 10px;
+        padding: 10px;
+    }
+    .conocenos-carusel{
+        padding: 10px;
+        margin-right: 10px;
+
+    }
+}
+
+@media (max-width: 500px){
+    .conocenos-carusel{
+        height: 250px;
+    }
+}
+
+.wrapper {
+    height: 20vh;
+    display: grid;
+    place-items: center;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .carousel-container {
+    width: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+  }
+  
+  .carousel-container img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+  }
+  .brdr-rad-10 {
+    border-radius: 10px;
+  }
+  
+  .no-show {
+    display: none;
+  }
+  
+  #prevBtn {
+    transform: translateX(-500%);
+  }
+  
+  .dotsContainer {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    bottom: 0%;
+    transform: translateY(300%);
+  }
+  
+  .dot {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    opacity: 0.04;
+    background: white;
+  }
+  
+  .active {
+    opacity: 1;
+    animation: anim-opacity 2.5s infinite alternate;
+  }
+  
+  #nextBtn {
+    transform: translateX(500%);
+  }
+  
+  .btn {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    background: white;
+    font-size: 3em;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+  }
+  .btn:hover {
+    filter: invert(1);
+  }
+  
+  @keyframes anim-opacity {
+    0% {
+      opacity: 0.04;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /*# sourceMappingURL=crusel.css.map */
+  
+  @media (max-width: 500px){
+   
+  
+    .carousel-container img{
+      height: 180px;
+      width: 180px;
+    }
+  }
+
+
+/* Fin seccion conocenos*/
 
 .subtitles {
     margin-top: 20px;
