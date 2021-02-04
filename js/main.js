@@ -166,4 +166,4 @@ carousel({
     'enterClass': 'animate__zoomInDown',
     'leaveClass': 'animate__zoomOutDown',
 });
-
+>>>>>>> 7caa26765e530adfa0c332190db02c3137f2ba5e

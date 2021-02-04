@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40.002" height="26" viewBox="0 0 40.002 26">
+  <g id="Vivid-Icons-cloud" transform="translate(-352.999 -180)">
+    <g id="Icons" transform="translate(37 169)">
+      <g id="cloud-tools" transform="translate(312)">
+        <g id="Shape" transform="translate(3 11)">
+          <path id="Trazado_44" data-name="Trazado 44" d="M34.22,26H10.492A9.67,9.67,0,0,1,1,16.162C1,10.729,4.758,7,10,7a17.223,17.223,0,0,1,3,0c1.607-3.882,5.022-7,9.356-7C28.16,0,33,3.985,33,10c0,.411.043,1.6,0,2a3.293,3.293,0,0,1,1,0,7.046,7.046,0,0,1,7,6.973A6.907,6.907,0,0,1,34.22,26Z" fill="#343d47" fill-rule="evenodd"/>
+          <path id="Trazado_45" data-name="Trazado 45" d="M5.809,24.713l12.414-12.49L21.9,15.9,11.853,26H10.492A9.183,9.183,0,0,1,5.809,24.713Z" fill="#f2f2f2" fill-rule="evenodd"/>
+          <path id="Trazado_46" data-name="Trazado 46" d="M29.427,8.171a7.041,7.041,0,0,1-1.443,7.754,6.869,6.869,0,0,1-6.426,1.862,7.573,7.573,0,0,1-5.387-6.655,6.981,6.981,0,0,1,2.008-5.1,6.885,6.885,0,0,1,7.683-1.456L20.853,9.631l3.566,3.6Z" fill="#f2f2f2" fill-rule="evenodd"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

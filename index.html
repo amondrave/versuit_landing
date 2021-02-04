@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Versuit</title>
+    <title>Versuit-Tecnología</title>
     <meta name="description" content="Empresa de soluciones tecnológicas al alcance de tu mano ">
-
+    <link rel="icon" href="img/isotipo.png" type="image/png" />
     <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
@@ -23,10 +23,16 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 
 <body>
+    <div id="preloader">
+        <div class="content_img">
+            <img class="isotipo_preloader" src="img/isotipo.svg">
+        </div>
+    </div>
     <header class="header">
         <a class="logotipo">
             <object>
@@ -65,13 +71,16 @@
                 </div>
             </div>
 
+
         </div>
         <div class="conocenos-container" id="conocenos">
-            <div class="conoceno-info">
-                <div class="titulo-conocenos">
-                    <h4>Conocenos</h4>
-                </div>
+            <div class="conocenos-info">
+
                 <div class="contenido-conocenos">
+                    <h4 class="subtitulo_mini">Acércate y</h4>
+                    <div data-aos="slide-right" data-aos-delay="100" data-aos-duration="1200" id="titulo-conocenos">
+                        Conócenos
+                    </div>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nemo quibusdam dolore vel,
                     numquam
                     accusamus sequi fugit alias consequatur, eligendi aliquam ab omnis saepe illum tempora. Aspernatur
@@ -88,72 +97,71 @@
                     consequatur.
                 </div>
             </div>
-            <div class="conocenos-carusel">
-                <h4>INNOVADOR</h4>
-                <div class="wrapper">
-                    <div class="carousel-container">
-
-                        <div class="carousel-slide no-show">
-
-                            <img class="slide" src="https://source.unsplash.com/random/350x351" alt="" />
-                            <img class="slide" src="https://source.unsplash.com/random/350x352" alt="" />
-                            <img class="slide" src="https://source.unsplash.com/random/350x353" alt="" />
-                            <img class="slide" src="https://source.unsplash.com/random/350x354" alt="" />
-                            <img class="slide" src="https://source.unsplash.com/random/350x355" alt="" />
-                            <img class="slide" src="https://source.unsplash.com/random/350x356" alt="" />
-                            <img class="slide" src="https://source.unsplash.com/random/350x357" alt="" />
-                            <img class="slide" src="https://source.unsplash.com/random/350x358" alt="" />
-                            <img class="slide" src="https://source.unsplash.com/random/350x350" alt="" />
-                        </div>
-                    </div>
-
+            <div data-aos="slide-left" data-aos-delay="100" data-aos-duration="1400" class="carousel">
+                <div class="carousel__stage">
+                    <input class="carousel__item-input" type="radio" name="item" id="input_0" checked="checked" />
+                    <input class="carousel__item-input" type="radio" name="item" id="input_1" />
+                    <input class="carousel__item-input" type="radio" name="item" id="input_2" />
+                    <input class="carousel__item-input" type="radio" name="item" id="input_3" />
+                    <input class="carousel__item-input" type="radio" name="item" id="input_4" />
+                    <div class="carousel__item-content"></div>
+                    <div class="carousel__item-content"></div>
+                    <div class="carousel__item-content"></div>
+                    <div class="carousel__item-content"></div>
+                    <div class="carousel__item-content"></div>
+                    <label class="carousel__item-label" for="input_0"></label>
+                    <label class="carousel__item-label" for="input_1"></label>
+                    <label class="carousel__item-label" for="input_2"></label>
+                    <label class="carousel__item-label" for="input_3"></label>
+                    <label class="carousel__item-label" for="input_4"></label>
                 </div>
             </div>
         </div>
         <div class="seccion-3" id="servicios">
             <h4 class="subtitulo_mini" id="sub_mini_servicios">¿Qué ofrecemos?</h4>
-            <h2 class="subtitulo" id="sub_servicios">Nuestros Servicios</h2>
+            <h2 data-aos="slide-left" data-aos-delay="60" data-aos-duration="1200" class="subtitulo" id="sub_servicios">
+                Nuestros Servicios</h2>
             <div class="servicio-fila">
 
-                <div class="card_s card-1">
-                    <h3>Ionic Native</h3>
+                <div data-aos="fade-right" data-aos-duration="1000" class="card_s card-1">
+                    <h3>Mantenimiento de computo</h3>
                     <p class="p_servicio">A curated set of ES5/ES6/TypeScript wrappers for plugins to easily add any
                         native
                         functionality to your Ionic apps.</p>
                 </div>
 
 
-                <div class="card_s card-2">
-                    <h3>UI Components</h3>
+                <div data-aos="zoom-in" data-aos-duration="1000" class="card_s card-2">
+                    <h3>Desarrollo web</h3>
                     <p class="p_servicio">Tabs, buttons, inputs, lists, cards, and more! A comprehensive library
                         of mobile UI components, ready to go.</p>
                 </div>
 
 
-                <div class="card_s card-3">
-                    <h3>Theming</h3>
+                <div data-aos="fade-left" data-aos-duration="1000" class="card_s card-3">
+                    <h3>Software a la medida</h3>
                     <p class="p_servicio">Learn how to easily customize and modify your app’s design to fit your
                         brand across all mobile platform styles.</p>
                 </div>
 
 
-                <div class="card_s card-1">
-                    <h3>Ionic Native</h3>
+                <div data-aos="fade-right" data-aos-duration="1000" class="card_s card-4">
+                    <h3>Soporte técnico en software</h3>
                     <p class="p_servicio">A curated set of ES5/ES6/TypeScript wrappers for plugins to easily add any
                         native
                         functionality to your Ionic apps.</p>
                 </div>
 
 
-                <div class="card_s card-2">
-                    <h3>UI Components</h3>
+                <div data-aos="zoom-in" data-aos-duration="1000" class="card_s card-5">
+                    <h3>Asesoría TIC</h3>
                     <p class="p_servicio">Tabs, buttons, inputs, lists, cards, and more! A comprehensive library
                         of mobile UI components, ready to go.</p>
                 </div>
 
 
-                <div class="card_s card-3">
-                    <h3>Theming</h3>
+                <div data-aos="fade-left" data-aos-duration="1000" class="card_s card-6">
+                    <h3>Soporte técnico servidores</h3>
                     <p class="p_servicio">Learn how to easily customize and modify your app’s design to fit your
                         brand across all mobile platform styles.</p>
                 </div>
@@ -165,10 +173,11 @@
             <div class="contenedor_text">
                 <div class="subtitles">
                     <h5 class="subtitulo_mini">Conoce nuestro</h5>
-                    <h2 id="sub_equipo_trabajo" class="subtitulo">Equipo de trabajo</h2>
+                    <h2 data-aos="fade-up" data-aos-delay="90" data-aos-duration="1500" id="sub_equipo_trabajo"
+                        class="subtitulo">Equipo de trabajo</h2>
                 </div>
                 <div class="content">
-                    <div class="slider_equipo">
+                    <div data-aos="fade-down" data-aos-duration="1500" data-aos-delay="90" class="slider_equipo">
                         <div id="slider-text1" class="slider-text">UNO ipsum dolor sit amet consectetur adipisicing
                             elit.liquid neque
                             delectus quisquam fugit distinctio amet sit similique saepe dolor. Dolor quidem similique
@@ -183,8 +192,9 @@
 
                 </div>
             </div>
-            <div class="contenedor_equi">
-                <div class="slider">
+            <div data-aos="fade-left" data-aos-delay="90" data-aos-duration="1500" data-aos-once=»true»
+                class="contenedor_equi">
+                <div data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="80" class="slider">
                     <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav" />
                     <input type="radio" name="slider" title="slide2" class="slider__nav" />
                     <div class="slider__inner">
@@ -246,8 +256,8 @@
 
 
         <div class="contenido-form" id="sub_contacto">
-            <h1 class="brand-form">Contáctanos</h1>
-            <div class="contacto-grupo">
+            <h1 data-aos="slide-left" data-aos-delay="60" data-aos-duration="1200" class="brand-form">Contáctanos</h1>
+            <div data-aos="fade-up" data-aos-delay="50" class="contacto-grupo">
                 <div class="formulario">
                     <h3>Mensaje:</h3>
                     <form class="form_contactanos" action="" method="POST">
@@ -278,19 +288,16 @@
                         </p>
                     </form>
                 </div>
-                <div class="formulario-info">
+                <div data-aos="fade-down" data-aos-delay="20" class="formulario-info">
                     <h4 class="txt_contactanos">Más información</h4>
                     <ul>
-                        <li><i id="icon-contact" class="fas fa-phone"></i></li>
-                        <li><i id="icon-contact" class="fas fa-map-marker"></i></li>
-                        <li><i id="icon-contact" class="fas fa-envelope"></i></li>
+                        <li><i id="icon-contact" class="fas fa-phone"> 321 967 01 20</i></li>
+                        <li><i id="icon-contact" class="fas fa-map-marker"> Cúcuta, N. de S.</i></li>
+                        <li><i id="icon-contact" class="fas fa-envelope"> email@versuit.com</i></li>
                     </ul>
-                    <p class="p_contactanos">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, rerum enim
-                        ipsum alias omnis,
-                        ullam
-                        aperiam quas tenetur qui sint animi pariatur. Repudiandae velit minus deserunt dicta sed
-                        voluptas
-                        voluptate!</p>
+                    <p class="p_contactanos">Contacta con nosotros y consulta cada una de las preguntas que tengas,
+                        aclara dudas que existan y sobretodo, cuéntanos que podemos hacer por ti. Comunícate con
+                        nosotros.</p>
                 </div>
             </div>
         </div>
@@ -300,28 +307,26 @@
 
     <footer class="footer">
         <div class="l-footer">
-            <a class="logotipo">
+            <a id="logotipo_footer" class="logotipo">
                 <object>
                     <embed id="logotipo" src="logotipo-footer.svg">
                 </object></a><br>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam atque recusandae in sit sunt
-                molestiae aliquid fugit. Mollitia eaque tempore iure sit nobis? Vitae nemo, optio maiores numquam quis
-                recusandae.</p>
+            <p data-aos="slide-right" data-aos-duration="1200" id="p_footer">En VERSUIT estamos para entregar el máximo
+                en cada servicio prestado, empeñados en desarrollar todo
+                hasta finalizar cada objetivo planteado, de manera exitosa y con una satisfacción alta para nuestros
+                clientes.</p>
         </div>
         <ul class="r-footer">
             <li>
                 <h2 class="txt_redes">Redes sociales</h2>
                 <ul class="box_redes">
                     <li><a href="#">
-                            <div class="container_redes">
+                            <div data-aos="zoom-in" data-aos-duration="900" data-aos-delay="100"
+                                class="container_redes">
                                 <div id="card_facebook" class="card">
                                     <h3 class="title">Facebook</h3>
-                                    <div class="bar">
-                                        <div class="emptybar"></div>
-                                        <div class="filledbar"></div>
-                                    </div>
                                     <div class="circle">
+                                        <div class="img_facebook"></div>
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
                                             <circle class="stroke" cx="60" cy="60" r="50" />
                                         </svg>
@@ -330,11 +335,11 @@
                                 <div id="card_instagram" class="card">
                                     <h3 class="title">Instagram</h3>
                                     <div class="bar">
-                                        <div class="emptybar"></div>
-                                        <div class="filledbar"></div>
+
                                     </div>
                                     <div class="circle">
-                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                        <div class="img_instagram"></div>
+                                        <svg width="200px" version="1.1" xmlns="http://www.w3.org/2000/svg">
                                             <circle class="stroke" cx="60" cy="60" r="50" />
                                         </svg>
                                     </div>
@@ -342,10 +347,9 @@
                                 <div id="card_whatsapp" class="card">
                                     <h3 class="title">Whatsapp</h3>
                                     <div class="bar">
-                                        <div class="emptybar"></div>
-                                        <div class="filledbar"></div>
                                     </div>
                                     <div class="circle">
+                                        <div class="img_whatsapp"></div>
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
                                             <circle class="stroke" cx="60" cy="60" r="50" />
                                         </svg>
@@ -358,16 +362,15 @@
 
                 </ul>
             </li>
-            <li class="features">
-                <h2>
-                    Información</h2>
+            <li data-aos="slide-left" data-aos-duration="1200" class="features">
+                <h2 id="txt_inf_footer">Información</h2>
                 <ul class="box h-box">
-                    <li><a href="#">Dirección</a></li>
-                    <li><a href="#">Telefono</a></li>
-                    <li><a><img class="isotipo" src="img/isotipo.svg"></a></li>
-
-
+                    <li><a href="#">Correo:</a></li>
+                    <li><a href="#">email@versuit.com</a></li>
+                    <li><a href="#">Telefono:</a></li>
+                    <li><a href="#">+57 3219670120</a></li>
                 </ul>
+
             </li>
 
         </ul>
@@ -380,8 +383,14 @@
 
     <!--Scripts JS-->
     <script src="js/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://kit.fontawesome.com/a63229d38e.js" crossorigin="anonymous"></script>
 </body>
+
+>>>>>>> 7caa26765e530adfa0c332190db02c3137f2ba5e
 
 </html>
