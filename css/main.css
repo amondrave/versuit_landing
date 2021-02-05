@@ -9,7 +9,7 @@
 /*FUENTE LOGOTIPO*/
 @font-face {
     font-family: "Robotech";
-    src: url("../fonts/ROBOTECH\ GP.ttf");
+    src: url("../fonts/ROBOTECH/ GP.ttf");
 }
 
 /*PERSONALIZACION CAPA IN PAGE*/
@@ -72,6 +72,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 35px 5%;
+    flex-wrap: wrap;
 }
 
 .logotipo {
@@ -82,12 +83,12 @@ header {
     animation: in-header 2.6s ease-in alternate;
 }
 
-.menu {
+.navigation ul {
     list-style: none;
     animation: in-header 2.6s ease-in alternate;
 }
 
-.menu li {
+.navigation ul, li {
     text-decoration: none;
     display: inline-block;
     padding: 0 10px;
@@ -158,6 +159,48 @@ header {
         opacity: 1;
     }
 }
+
+.menu-icon{
+    color: #373737;
+    display: none;
+}
+
+
+/*Cabecera responsive*/
+
+@media (max-width: 767px){
+
+ .menu-icon{
+     display: block;
+     color: #373737;
+ }
+
+ #menu-hb{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+ }
+
+ .navigation{
+     width: 100%;
+     margin-top: 1rem;
+ }   
+
+  .navigation ul {
+      display: none;
+  }
+
+  .navigation ul.show{
+      display: block;
+  }
+ 
+  .item-button{
+      display: none;
+  }
+
+}
+
+/*Fin cabecera responsive*/
 
 /*CABECERA*/
 
@@ -481,6 +524,10 @@ a {
     color: white;
     text-align: left !important;
     margin-top: 20px;
+}
+
+.p_conocenos{
+    font-size: 1rem;
 }
 
 @media screen and (max-width:600px){
@@ -1092,7 +1139,7 @@ a {
 .content {
     width: 100%;
     display: flex;
-    height: 150px;
+    height: 152px;
     align-items: center;
     flex-direction: column;
     overflow: hidden;
@@ -1410,7 +1457,7 @@ p {
     -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     background-image: url("../img/mondra.jpg");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 .property-image-joimar {
@@ -1422,7 +1469,7 @@ p {
     -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-    background-size: cover;
+    background-size: contain;
     background-image: url("../img/joimar.jpg");
     background-repeat: no-repeat;
 }
