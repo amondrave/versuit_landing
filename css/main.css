@@ -173,6 +173,8 @@ header {
  .menu-icon{
      display: block;
      color: #373737;
+     cursor: pointer;
+     z-index: 100;
  }
 
  #menu-hb{
@@ -190,8 +192,10 @@ header {
       display: none;
   }
 
-  .navigation ul.show{
+
+  .navigation ul.show, li{
       display: block;
+      margin: 5px 0;
   }
  
   .item-button{
